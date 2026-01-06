@@ -1,0 +1,60 @@
+# Day 1 – Introduction to Ethical Hacking
+
+## Personal Introduction
+My name is Mohammad, I am 16 years old, and today was my first day learning cybersecurity with The Cyber Mentor (TCM).
+
+I recently participated in a CTF (Capture the Flag) competition and won second place among participants from 50 schools in Jordan. This experience motivated me to go deeper into cybersecurity. I also know that a career in this field can provide a good salary, and I want to start earning my own money by 17 and reach my maximum potential by 18.
+
+I chose this course because many people started their journey from it, I like the way the mentor explains concepts clearly, and the course has a lot of views and credibility.
+
+---
+
+## Introduction to Ethical Hacking & Daily Life
+Ethical hacking is the legal and responsible process of testing systems, networks, and applications to find vulnerabilities before attackers do.
+
+**Daily Life of an Ethical Hacker:**  
+- Studying system and network configurations  
+- Running scans to identify potential vulnerabilities  
+- Testing applications in safe, controlled environments  
+- Documenting findings in clear reports  
+- Continuously learning about new tools and methods  
+
+---
+
+## Note-Taking, Tools, and Mindset
+
+**Note-Taking:**  
+- Track commands, tools, and lab exercises  
+- Record vulnerabilities discovered  
+- Reflect on mistakes and lessons learned  
+
+**Tools & Mindset:**  
+- Tools help, but understanding how they work is more important  
+- Hacker mindset = curiosity, patience, and ethics  
+- Think like an attacker without causing harm  
+
+---
+
+## Networking Basics
+- **IP Addresses:** Identify devices on a network  
+- **MAC Addresses:** Identify network hardware  
+- **Protocols:** Rules for communication between devices (TCP/IP, HTTP, DNS…)  
+- **OSI Model:** Explains how data flows through networks and helps locate potential vulnerabilities  
+
+---
+
+## Setting Up a Safe Hacking Environment
+- **Virtual Machines (VMs):** VirtualBox or VMware create isolated environments  
+- **Kali Linux:** Specialized OS with security tools for safe practice  
+- Installed the VM, configured networking, and ran first commands under TCM guidance  
+
+> **Screenshot placeholder:** Add image of your VM setup here  
+
+---
+
+## Reflection – Day 1
+Day 1 taught me that cybersecurity is more about thinking and planning than just executing attacks. TCM’s lessons make it easy for beginners like me to understand foundational concepts, set up safe labs, and develop the right mindset.
+
+I’m excited to continue this journey and gradually move into advanced tools and penetration testing.
+
+> 
