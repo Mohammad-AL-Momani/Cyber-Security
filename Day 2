@@ -1,0 +1,93 @@
+---
+
+DAY 2: Subnet Mask & Binary Basics - My Understanding So Far (TCM Course) 
+Subnet Mask & Binary Basics 
+
+Right now, I am studying subnet masks in the TCM course.
+From what I learned, a subnet mask is a 32-bit number that works with an IP address to tell us which part of the IP is the network and which part is the host.
+When we do subnetting, there are a few main things we always want to find:
+
+Network address - the first address in the subne
+Broadcast address - the last address in the subnet
+First available host address - one address after the network address
+Last available host address - one address before the broadcast address
+
+We usually work with IPv4 addresses, for example: 192.168.1.0.
+An IPv4 address is divided into four numbers, and each number is called an octet.
+
+---
+
+The 8-Bit Octet Chart (What Finally Made Sense)
+Each octet is made of 8 bits, which is why we use the 8-bit chart:
+128 64 32 16 8 4 2 1
+Each bit can be:
+1 = ON
+0 = OFF
+
+The value of the octet depends on which bits are turned on.
+
+---
+
+Converting an IP Address to Binary
+For the IP address 192.168.1.0:
+192 in binary:
+128 (on) + 64 (on) = 192
+Binary: 1100000
+
+168 in binary:
+128 (on) + 32 (on) + 8 (on) = 168
+Binary: 10101000
+
+1 in binary:
+Only the last bit (1) is on
+Binary: 00000001
+
+0 in binary:
+All bits are off
+Binary: 00000000
+
+So the full binary form of 192.168.1.0 becomes:
+11000000.10101000.00000001.00000000
+
+---
+
+Subnet Mask in Binary (Network vs Host)
+A subnet mask like 255.255.255.0 means:
+255 in binary = 11111111
+0 in binary = 00000000
+
+So the subnet mask in binary is:
+11111111.11111111.11111111.00000000
+Here is the key rule that finally clicked for me:
+1s represent the network portion
+0s represent the host portion
+
+So for:
+IP Address:   192.168.1.0
+Subnet Mask: 255.255.255.0
+The first three octets are network
+The last octet is for hosts
+
+---
+
+What Helped Me Understand This (Honestly)
+In the TCM course, it was mentioned that a 7-second video could help explain subnetting.
+I watched it, but I honestly did not understand the explanation style at that moment.
+Later, YouTube recommended a video by PowerCert about Subnet Mask explained.
+I clicked it, watched it carefully, and everything finally made sense, especially the binary and 8-bit chart explanation.
+That video helped me connect:
+Binary
+Octets
+Subnet masks
+Network vs host bits
+
+---
+
+Final Note
+I didn't publish this write-up yesterday because I was really exhausted.
+I had been awake since the morning and needed sleep before writing something clear and meaningful.
+
+---
+
+This is my understanding so far, and I'm continuing step by step.
+
