@@ -1,0 +1,83 @@
+# Networking Basics and Common Commands
+
+As I’ve been diving into networking, I’ve come across some essential commands that have helped me understand and troubleshoot my network better.
+
+---
+
+## Network Interface Commands
+
+- **`ip a`**  
+  This command gives a detailed look at all network interfaces, showing both IPv4 and IPv6 addresses, MAC addresses, and broadcast information.
+
+- **`ifconfig`**  
+  An alternative to `ip a`, providing similar details about network interfaces.
+
+- **`iwconfig`**  
+  For wireless connections, this command shows SSID, frequency, and signal strength, which has been very helpful.
+
+---
+
+## Device Discovery Commands
+
+- **`ip n`** (also `ip neighbour`)  
+  Maps IP addresses to MAC addresses, helping me see what devices are connected to my network.
+
+- **`arp -a`**  
+  Displays the ARP table, giving insights into the relationships between IP addresses and MAC addresses.
+
+---
+
+## Routing Commands
+
+- **`ip r`** (short for `ip route`)  
+  Shows the routing table and helps me understand how data packets travel to their destinations.
+
+- **`route`**  
+  Another command to view routing information, similar to `ip r`.
+
+---
+
+## Connectivity Testing
+
+- **`ping <IP>`**  
+  Sends ICMP echo requests to check if a device is reachable. Note that some devices may not respond if ICMP is disabled.
+
+- **Interrupting Commands**  
+  To stop a command like `ping`, simply use **Ctrl + C**.
+
+---
+
+## Routing Concepts
+
+Routing is all about directing data packets to their destinations. The routing table is essentially a set of rules that guides these packets.
+
+- **Directly Connected Routes**  
+  Routes to networks directly connected to the router’s interface.
+
+- **Static Routes**  
+  Manually configured routes by the network administrator.
+
+- **Dynamic Routes**  
+  Routes learned and updated automatically from neighboring routers.
+
+---
+
+> **Note:** Networking concepts are from the [TCM course on YouTube](https://www.youtube.com/@TCM), and routing table details are from the [PowerCert channel](https://www.youtube.com/@PowerCert).
+
+---
+
+## Proof / Evidence
+
+I practiced these commands and concepts hands-on. Evidence can include screenshots, terminal outputs, or notes:
+
+1. Viewing network interfaces with `ip a`  
+2. Checking wireless connections with `iwconfig`  
+3. Listing ARP table using `arp -a`  
+4. Viewing routing table with `ip r` and `route`  
+5. Testing connectivity with `ping`  
+6. Demonstrating manual static route setup  
+7. Observing dynamic routes in action
+
+Proof in medium
+
+**Medium :** [Day 5 - Common Network Commands Explained](https://medium.com/@mohamd2001momani/day5-common-network-commands-explained-38bf976676c0)
