@@ -1,0 +1,39 @@
+Users and Privileges in Linux
+When navigating the Linux file system, one of the first things you’ll notice is that files and directories are color-coded. This visual cue helps quickly identify file types. For example, directories usually appear in blue, executable files in green, symbolic links in cyan, and compressed archives like .zip or .tar files often appear in red.
+
+To view detailed information about files and directories, I used the ls -la command. At the beginning of each line, there’s a string of characters that represents the file’s type and permissions.
+The very first character indicates the file type:
+
+d means the item is a directory
+- means it’s a regular file
+After that, there are three sets of three characters, which show permissions for:
+
+The owner
+The group
+Others
+Each permission set can contain:
+
+r → read
+w → write
+x → execute
+For example, rwx means the user can read, write, and execute the file.
+
+The first trio of characters represents the owner’s permissions.
+The second trio represents the group’s permissions.
+The third trio represents the permissions for others.
+Linux allows you to modify these permissions using the chmod command. One of the easiest ways to do this is the numeric method, where:
+
+Read = 4
+Write = 2
+Execute = 1
+These values are added together to set permissions.
+For example, chmod 755 gives:
+
+The owner read, write, and execute permissions
+The group and others read and execute permissions only
+In addition to managing files, Linux also allows you to manage users. Using commands like sudo adduser, you can create new users and then assign them to groups or control what they are allowed to access.
+Overall, understanding users and permissions is a core part of Linux. It plays a huge role in system security, access control, and preventing unauthorized actions on files and directories.
+
+Final Note:
+All of this learning and hands-on practice was done while studying the TCM (The Cyber Mentor) course on YouTube, which helped reinforce these Linux concepts through clear explanations and practical demonstrations.
+Proof / evedancie in medium https://medium.com/@mohamd2001momani/day-4-users-and-privileges-in-linux-b97d752d57dd
