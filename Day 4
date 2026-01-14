@@ -1,0 +1,95 @@
+Day 4: Users and Privileges in Linux
+
+Today, I focused on understanding users, groups, and permissions in Linux. This day was all about learning how Linux handles file access and how to manage users and permissions efficiently to maintain system security.
+
+Understanding File Types and Permissions
+
+When navigating the Linux file system, one of the first things you’ll notice is that files and directories are color-coded:
+
+Directories → blue
+
+Executable files → green
+
+Symbolic links → cyan
+
+Compressed archives (.zip, .tar) → red
+
+To view detailed information about files and directories, I used:
+
+ls -la
+
+
+Each line shows the file type and permissions.
+
+File Type
+
+The first character represents the file type:
+
+d → directory
+
+- → regular file
+
+Permissions
+
+The next nine characters are grouped into three sets of three:
+
+Set	Represents	Possible Characters
+1st trio	Owner	r = read, w = write, x = execute
+2nd trio	Group	r, w, x
+3rd trio	Others	r, w, x
+
+Example:
+
+-rwxr-xr-x
+
+
+Owner → rwx → read, write, execute
+
+Group → r-x → read, execute
+
+Others → r-x → read, execute
+
+Modifying Permissions with chmod
+
+Linux allows you to change permissions using the chmod command.
+
+Numeric Method
+Permission	Value
+Read	4
+Write	2
+Execute	1
+
+Example:
+
+chmod 755 filename
+
+
+Explanation:
+
+Owner → read, write, execute (7 = 4+2+1)
+
+Group → read, execute (5 = 4+0+1)
+
+Others → read, execute (5 = 4+0+1)
+
+Managing Users
+
+Linux also allows you to manage users and control their access:
+
+# Add a new user
+sudo adduser newuser
+
+# Add a user to a group
+sudo usermod -aG groupname newuser
+
+
+Users can be assigned to groups.
+
+Controlling permissions ensures system security and prevents unauthorized access.
+
+Final Note
+
+All of this learning and hands-on practice was done while studying the TCM (The Cyber Mentor) course on YouTube, which helped reinforce these Linux concepts with clear explanations and demonstrations.
+
+For proof of practice, check my Medium write-up:
+Users and Privileges in Linux - Medium
