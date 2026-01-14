@@ -1,0 +1,152 @@
+# File Management and Service Control in Linux
+
+As I dive into Linux, I’ve been exploring different ways to view, create, and edit files. While the `echo` command is quick and straightforward, I find myself more comfortable using **nano** for command-line editing and **Mousepad** for a graphical approach. It’s been interesting to see how these tools make file management more intuitive.
+
+---
+
+## Managing Services
+
+Learning to start and stop services is an important skill:
+
+- **Start a service**  
+  ```bash
+  sudo service apache2 start
+Screenshot placeholder:
+![Start Apache](./images/start_apache.png)
+
+Stop a service
+
+sudo service apache2 stop
+Screenshot placeholder:
+![Stop Apache](./images/stop_apache.png)
+
+Running Python Web Server
+I experimented with running a simple web server using Python:
+
+Start a server on port 80
+
+python3 -m http.server 80
+If permission issues occur
+
+sudo python3 -m http.server 80
+Screenshot placeholder:
+![Python Web Server](./images/python_server.png)
+
+Enabling and Disabling Services on Boot
+Managing services at boot ensures critical services start automatically:
+
+Enable SSH at boot
+
+sudo systemctl enable ssh
+Screenshot placeholder:
+![Enable SSH](./images/enable_ssh.png)
+
+Disable SSH at boot
+
+sudo systemctl disable ssh
+Screenshot placeholder:
+![Disable SSH](./images/disable_ssh.png)
+
+Keeping Tools Up to Date
+Keeping the system and tools updated is essential:
+
+Update package lists
+
+sudo apt update
+Upgrade installed packages
+
+sudo apt upgrade
+Install/remove tools
+
+sudo apt install [package-name]
+sudo apt remove [package-name]
+Install tools from GitHub
+
+sudo git clone [repository-link]
+Screenshot placeholder:
+`![System Update](./images/system
+
+You said:
+no images
+ChatGPT said:
+Ah! Got it — no screenshot placeholders this time. You want it just like the first GitHub-ready Markdown, clean, with headings, code blocks, proof section, and references, but without any images. Here’s the correct version:
+
+# File Management and Service Control in Linux
+
+As I dive into Linux, I’ve been exploring different ways to view, create, and edit files. While the `echo` command is quick and straightforward, I find myself more comfortable using **nano** for command-line editing and **Mousepad** for a graphical approach. It’s been interesting to see how these tools make file management more intuitive.
+
+---
+
+## Managing Services
+
+Learning to start and stop services is an important skill:
+
+- **Start a service**  
+  ```bash
+  sudo service apache2 start
+Stop a service
+
+sudo service apache2 stop
+Understanding how to control services effectively has been very rewarding.
+
+Running Python Web Server
+I experimented with running a simple web server using Python:
+
+Start a server on port 80
+
+python3 -m http.server 80
+If permission issues occur
+
+sudo python3 -m http.server 80
+Testing these commands in practice has been fun and insightful.
+
+Enabling and Disabling Services on Boot
+Managing services at boot ensures critical services start automatically:
+
+Enable SSH at boot
+
+sudo systemctl enable ssh
+Disable SSH at boot
+
+sudo systemctl disable ssh
+Keeping Tools Up to Date
+Keeping the system and tools updated is essential:
+
+Update package lists
+
+sudo apt update
+Upgrade installed packages
+
+sudo apt upgrade
+Install/remove tools
+
+sudo apt install [package-name]
+sudo apt remove [package-name]
+Install tools from GitHub
+
+sudo git clone [repository-link]
+Note: Using tools like Pimp My Kali can help safely update and manage packages.
+
+Final Thoughts
+It’s been incredibly rewarding to learn these foundational skills and see how they come together. This journey has definitely deepened my understanding of Linux and system management.
+
+Note: This knowledge was acquired through the TCM course on YouTube.
+
+Proof / Evidence
+Hands-on practice evidence can include terminal outputs or notes:
+
+Viewing, creating, and editing files with echo, nano, and Mousepad
+
+Starting and stopping services with service commands
+
+Running a Python web server with python3 -m http.server
+
+Enabling and disabling services on boot with systemctl
+
+Updating the system with apt update and apt upgrade
+
+Installing/removing tools with apt install / apt remove
+
+Cloning tools from GitHub using git clone
+
+Medium proof: Day 6 - File Management and Service Control
